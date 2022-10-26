@@ -6,10 +6,19 @@ class PessoaFisica
 
     def falar(nome = "Pessoal")
         "olá, #{nome}"
-    end    
+    end
+
+    def meu_id
+        "Meu id é o #{self.object_id}"
+    end
 end
 
-p = PessoaFisica.new
+p1 = PessoaFisica.new
 
-puts p.falar
-puts p.falar("Fernanda")
+puts p1.falar
+puts p1.falar("Fernanda")
+puts p1.meu_id
+
+p2 = PessoaFisica.new
+
+puts p2.meu_id
